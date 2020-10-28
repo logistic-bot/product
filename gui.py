@@ -83,7 +83,7 @@ class InventoryMainView(wx.Frame):
         welcome_font.PointSize += 3
         welcome_text.SetFont(welcome_font)
 
-        version_text = wx.StaticText(panel, label="Version 0.3.0")
+        version_text = wx.StaticText(panel, label="Version 1.0.0")
         version_font = font
         version_font.PointSize -= 3
         version_font.SetWeight(wx.FONTWEIGHT_LIGHT)
