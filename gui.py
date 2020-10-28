@@ -28,13 +28,13 @@ class NewItemDialog(wx.Dialog):
         sizer.Add(nameEntry, wx.SizerFlags().Center())
         self.nameEntry = nameEntry
 
-        amountEntry = wx.SpinCtrl(panel, min=0, initial=0, max=99999999)
+        amountEntry = wx.SpinCtrl(panel, min=0, initial=0, max=99999999, size=(300, -1))
         amountLabel = wx.StaticText(panel, label="Amount")
         sizer.Add(amountLabel, wx.SizerFlags().Center())
         sizer.Add(amountEntry, wx.SizerFlags().Center())
         self.amountEntry = amountEntry
 
-        priceEntry = wx.SpinCtrlDouble(panel, min=0, initial=0, max=99999999, inc=0.01)
+        priceEntry = wx.SpinCtrlDouble(panel, min=0, initial=0, max=99999999, inc=0.01, size=(300, -1))
         priceLabel = wx.StaticText(panel, label="Price")
         sizer.Add(priceLabel, wx.SizerFlags().Center())
         sizer.Add(priceEntry, wx.SizerFlags().Center())
@@ -83,7 +83,7 @@ class InventoryMainView(wx.Frame):
         welcome_font.PointSize += 3
         welcome_text.SetFont(welcome_font)
 
-        version_text = wx.StaticText(panel, label="Version 1.0.0")
+        version_text = wx.StaticText(panel, label="Version 1.1.0")
         version_font = font
         version_font.PointSize -= 3
         version_font.SetWeight(wx.FONTWEIGHT_LIGHT)
